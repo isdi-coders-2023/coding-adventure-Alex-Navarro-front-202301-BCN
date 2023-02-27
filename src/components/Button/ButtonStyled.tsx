@@ -11,10 +11,12 @@ const ButtonStyled = styled.button`
   font-size: 1.25rem;
   line-height: 31.48px;
 
-  @media (min-width: 415px) {
-    width: 320px;
-    height: 57px;
+  :disabled {
     opacity: 0.57;
+  }
+
+  @media (min-width: 415px) {
+    height: 57px;
   }
 `;
 
