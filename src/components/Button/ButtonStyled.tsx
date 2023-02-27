@@ -15,6 +15,12 @@ const ButtonStyled = styled.button`
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 31.48px;
+
+  @media (min-width: 415px) {
+    width: 320px;
+    height: 57px;
+    opacity: 0.57;
+  }
 `;
 
 export default ButtonStyled;
