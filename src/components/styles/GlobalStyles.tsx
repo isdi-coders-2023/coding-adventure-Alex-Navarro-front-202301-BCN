@@ -5,6 +5,9 @@ const GlobalStyles = createGlobalStyle`
 :root {
   --primary-font: "Roboto";
   --secondary-font: "Saira Stencil One";
+
+  --primary-color:#1E1E1E;
+  --secondary-color: #CCCF18;
 }
 
 *, ::after, ::before {
