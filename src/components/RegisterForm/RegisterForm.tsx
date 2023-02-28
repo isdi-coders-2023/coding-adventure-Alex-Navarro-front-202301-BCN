@@ -1,9 +1,10 @@
 import Button from "../Button/Button";
+import RegisterFormStyled from "./RegisterFormStyled";
 
 const RegisterForm = (): JSX.Element => {
   return (
     <>
-      <form className="form">
+      <RegisterFormStyled className="form">
         <h2 className="form__title">Register for the event</h2>
         <div className="label-container">
           <label htmlFor="email" className="label-container__title">
@@ -43,7 +44,7 @@ const RegisterForm = (): JSX.Element => {
           />
         </div>
         <Button text="Sign up" />
-      </form>
+      </RegisterFormStyled>
     </>
   );
 };
