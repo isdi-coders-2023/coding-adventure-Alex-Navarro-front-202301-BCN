@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
 
 body {
   padding: 30px;
-  background-color: #fff;
+  background-color: var(--primary-color);
   width: 100%;
   min-height: 100vh;
 }
@@ -39,6 +39,10 @@ button{
   border: none;
   cursor: pointer;
   font-family: inherit;
+}
+
+input {
+    border: none;
 }
 
 `;
