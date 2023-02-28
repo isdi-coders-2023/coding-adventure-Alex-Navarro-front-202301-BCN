@@ -16,10 +16,15 @@ const GlobalStyles = createGlobalStyle`
 
 
 body {
-  padding: 30px;
+  padding: 1.5rem;
   background-color: var(--primary-color);
   width: 100%;
   min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 h1,h2{
@@ -34,15 +39,15 @@ ol, ul, li {
   text-decoration: none;
 }
 
-button{
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+button, input {
   font-family: inherit;
+  font-size:inherit;
+  border: none;
 }
-
-input {
-    border: none;
+  
+button {
+  background-color: transparent;
+  cursor: pointer;
 }
 
 `;
