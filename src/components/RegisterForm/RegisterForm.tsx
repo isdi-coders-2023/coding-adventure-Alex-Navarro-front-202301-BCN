@@ -1,3 +1,5 @@
+import Button from "../Button/Button";
+
 const RegisterForm = (): JSX.Element => {
   return (
     <>
@@ -10,7 +12,6 @@ const RegisterForm = (): JSX.Element => {
           <input
             id="email"
             type="email"
-            name="email"
             placeholder="Introduce your email"
             className="form__input"
           />
@@ -22,7 +23,6 @@ const RegisterForm = (): JSX.Element => {
           <input
             id="password"
             type="password"
-            name="password"
             placeholder="Introduce your password"
             required
             minLength={8}
@@ -42,6 +42,7 @@ const RegisterForm = (): JSX.Element => {
             className="form__input image-input"
           />
         </div>
+        <Button text="Sign up" />
       </form>
     </>
   );
