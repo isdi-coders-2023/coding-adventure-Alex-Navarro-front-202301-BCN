@@ -9,7 +9,11 @@ const GlobalStyles = createGlobalStyle`
   --primary-color:#1E1E1E;
   --secondary-color: #CCCF18;
 
-  padding: 1.5rem;
+}
+
+#root {
+  width: 100%;
+  margin: 1.5rem;
 }
 
 *, ::after, ::before {
@@ -22,13 +26,12 @@ body {
   background-color: var(--primary-color);
   height: 100vh;
   display: flex;
-  justify-content: center;
 }
 
-a{
-  text-decoration: none;
-  color: inherit;
-}
+  a, a:active, a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
 
 h1,h2{
   padding: 0;

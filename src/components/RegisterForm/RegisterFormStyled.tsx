@@ -3,7 +3,6 @@ import styled from "styled-components";
 const RegisterFormStyled = styled.form`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 48px;
 
   .form {
@@ -21,12 +20,9 @@ const RegisterFormStyled = styled.form`
     }
 
     &__input {
-      display: flex;
       height: 40px;
-      max-width: 832px;
       border-radius: 8px;
       border: solid 1px #fff;
-      align-items: center;
       padding: 11px;
 
       ::placeholder {
