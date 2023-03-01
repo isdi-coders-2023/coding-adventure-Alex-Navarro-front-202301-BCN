@@ -8,6 +8,8 @@ const GlobalStyles = createGlobalStyle`
 
   --primary-color:#1E1E1E;
   --secondary-color: #CCCF18;
+
+  padding: 1.5rem;
 }
 
 *, ::after, ::before {
@@ -16,10 +18,11 @@ const GlobalStyles = createGlobalStyle`
 
 
 body {
-  padding: 1.5rem;
+  margin: 0;
   background-color: var(--primary-color);
-  width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 a{
