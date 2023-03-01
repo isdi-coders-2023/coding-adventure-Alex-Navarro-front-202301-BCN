@@ -4,10 +4,9 @@ import RegisterFormStyled from "./RegisterFormStyled";
 const RegisterForm = (): JSX.Element => {
   return (
     <>
-      <RegisterFormStyled className="form">
-        <h2 className="form__title">Register for the event</h2>
-        <div className="label-container">
-          <label htmlFor="email" className="label-container__title">
+      <RegisterFormStyled autoComplete="off" className="form">
+        <div className="form__container">
+          <label htmlFor="email" className="form__label">
             Email
           </label>
           <input
@@ -17,8 +16,8 @@ const RegisterForm = (): JSX.Element => {
             className="form__input"
           />
         </div>
-        <div className="label-container">
-          <label htmlFor="password" className="label-container__title">
+        <div className="form__container">
+          <label htmlFor="password" className="form__label">
             Password
           </label>
           <input
@@ -30,8 +29,8 @@ const RegisterForm = (): JSX.Element => {
             className="form__input"
           />
         </div>
-        <div className="label-container">
-          <label htmlFor="image" className="label-container__title">
+        <div className="form__container">
+          <label htmlFor="image" className="form__label">
             Image
           </label>
 
@@ -40,7 +39,7 @@ const RegisterForm = (): JSX.Element => {
             type="file"
             placeholder="Introduce an image"
             accept="image/png, image/jpeg"
-            className="form__input image-input"
+            className="form__input"
           />
         </div>
         <Button text="Sign up" />
