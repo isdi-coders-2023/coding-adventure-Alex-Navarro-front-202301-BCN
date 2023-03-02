@@ -1,7 +1,22 @@
+import { useState } from "react";
 import Button from "../Button/Button";
 import RegisterFormStyled from "./RegisterFormStyled";
 
 const RegisterForm = (): JSX.Element => {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleDataChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [event.target.id]: event.target.value,
+    });
+  };
+
+  const isDisabled = formData.email === "" || formData.password === "";
+
   return (
     <>
       <RegisterFormStyled
@@ -17,6 +32,8 @@ const RegisterForm = (): JSX.Element => {
             type="email"
             placeholder="Introduce your email"
             className="form__input"
+            value={formData.email}
+            onChange={handleDataChange}
           />
         </label>
         <label htmlFor="password" className="form__label">
@@ -28,6 +45,8 @@ const RegisterForm = (): JSX.Element => {
             required
             minLength={8}
             className="form__input"
+            value={formData.password}
+            onChange={handleDataChange}
           />
         </label>
         <label htmlFor="image" className="form__label">
@@ -41,7 +60,7 @@ const RegisterForm = (): JSX.Element => {
           />
         </label>
 
-        <Button text="Sign up" />
+        <Button isDisabled={isDisabled} text="Sign up" />
       </RegisterFormStyled>
     </>
   );

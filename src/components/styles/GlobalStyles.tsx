@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
 
 body {
   margin: 0;
-  background-color: var(--primary-color);
+  background-color: ${(props) => props.theme.colors.primary};
   height: 100vh;
   display: flex;
 }
