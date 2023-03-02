@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 const ButtonStyled = styled.button`
-  background-color: var(--secondary-color);
+  background-color: ${(props) => props.theme.colors.secondary};
   border-radius: 10px;
   width: 100%;
   max-width: 325px;
   height: 40px;
 
-  font-family: var(--secondary-font);
+  font-family: ${(props) => props.theme.fonts.secondary};
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 31.48px;

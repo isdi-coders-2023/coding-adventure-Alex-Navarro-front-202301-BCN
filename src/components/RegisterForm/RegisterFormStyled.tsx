@@ -6,14 +6,11 @@ const RegisterFormStyled = styled.form`
   gap: 48px;
 
   .form {
-    &__container {
+    &__label {
       display: flex;
       flex-direction: column;
       gap: 9px;
-    }
-
-    &__label {
-      font-family: var(--primary-font);
+      font-family: ${(props) => props.theme.fonts.primary};
       font-size: 1.18 rem;
       font-weight: 700;
       color: #fff;
@@ -24,10 +21,12 @@ const RegisterFormStyled = styled.form`
       border-radius: 8px;
       border: solid 1px #fff;
       padding: 11px;
+      background-color: #e8e8e8;
+      color: ${(props) => props.theme.colors.primary};
 
       ::placeholder {
-        font-family: var(--primary-font);
-        color: black;
+        font-family: ${(props) => props.theme.fonts.primary};
+        color: ${(props) => props.theme.colors.primary};
       }
     }
   }
