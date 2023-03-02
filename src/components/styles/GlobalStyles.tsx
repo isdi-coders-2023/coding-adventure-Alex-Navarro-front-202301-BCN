@@ -2,14 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
-:root {
-  --primary-font: "Roboto";
-  --secondary-font: "Saira Stencil One";
 
-  --primary-color:#1E1E1E;
-  --secondary-color: #CCCF18;
-
-}
 
 #root {
   width: 100%;
