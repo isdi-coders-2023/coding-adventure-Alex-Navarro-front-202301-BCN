@@ -4,22 +4,23 @@ import RegisterFormStyled from "./RegisterFormStyled";
 const RegisterForm = (): JSX.Element => {
   return (
     <>
-      <RegisterFormStyled autoComplete="off" className="form">
-        <div className="form__container">
-          <label htmlFor="email" className="form__label">
-            Email
-          </label>
+      <RegisterFormStyled
+        autoComplete="off"
+        className="form"
+        aria-label="Register user"
+        onSubmit={() => {}}
+      >
+        <label htmlFor="email" className="form__label">
+          Email
           <input
             id="email"
             type="email"
             placeholder="Introduce your email"
             className="form__input"
           />
-        </div>
-        <div className="form__container">
-          <label htmlFor="password" className="form__label">
-            Password
-          </label>
+        </label>
+        <label htmlFor="password" className="form__label">
+          Password
           <input
             id="password"
             type="password"
@@ -28,12 +29,9 @@ const RegisterForm = (): JSX.Element => {
             minLength={8}
             className="form__input"
           />
-        </div>
-        <div className="form__container">
-          <label htmlFor="image" className="form__label">
-            Image
-          </label>
-
+        </label>
+        <label htmlFor="image" className="form__label">
+          Image
           <input
             id="image"
             type="file"
@@ -41,7 +39,8 @@ const RegisterForm = (): JSX.Element => {
             accept="image/png, image/jpeg"
             className="form__input"
           />
-        </div>
+        </label>
+
         <Button text="Sign up" />
       </RegisterFormStyled>
     </>
